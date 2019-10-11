@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="display1"></p>
+<p id="display2">Cac so lon hon 10 la </p>
+<script>
+    var a = [12, 1, 5, 23, 3, 7, 42, 8, 23, 58];
+    var dem = 0 ;
+    var b = "";
+    var c = "";
+    for(i = 0; i < a.length; i++){
+        b += a[i] + "  ";
+        document.getElementById("display1").innerHTML = b;
+        if (a[i] >= 10) {
+            dem ++ ;
+            c += a[i] +"   ";
+            document.getElementById("display2").innerHTML = c + "<br>"+" Found "+dem+" numbers langer than 10";
+        }
+    }
+
+</script>
+</body>
+</html>

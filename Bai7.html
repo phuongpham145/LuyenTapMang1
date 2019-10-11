@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = [12, 5, 86, 13, 3, 6, 75, 45, 56, 8];
+    var b = parseInt(prompt("Enter b = "));
+    function xoa(vitri) {
+        for (i = vitri; i < a.length; i++) {
+            a[i] = a[i+1];
+        }
+        for (i = 0; i < a.length -1 ; i++){
+            console.log(a[i]+ " ");
+        }
+    }
+    for ( i = 0; i < a.length; i++){
+        if (a[i] == b)
+        xoa(i);
+    }
+</script>
+</body>
+</html>

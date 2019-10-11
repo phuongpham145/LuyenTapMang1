@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var swap ;
+    var a = [15, 36, 79, 345, 6, 56, 3, 7987, 2, 10];
+    for (i = 0; i <= a.length -1; i++){
+        for (j = i+1; j <= a.length; j ++){
+            if (a[i] < a[j]){
+                swap = a[i];
+                a[i] = a[j];
+                a[j] = swap;
+            }
+        }
+    }
+    for (i = 0; i < a.length; i++) console.log(a[i]+"  ");
+</script>
+</body>
+</html>

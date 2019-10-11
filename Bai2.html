@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = [23, 54, 56, 75, 345, 65, 457, 6, 1, 4];
+    var max = a[0], dem = 0;
+    for (i = 0; i < a.length; i++){
+        if (max < a[i])
+        {
+            max = a[i];
+            dem = i ;
+        }
+    }
+    console.log("Max = "+max + " position = "+ dem);
+</script>
+</body>
+</html>
